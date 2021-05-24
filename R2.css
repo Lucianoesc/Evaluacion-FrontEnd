@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --gris: rgb(211, 211, 211);
+}
+
+body {
+    font-family: 'Arial';
+}
+
+table {
+    border: 1px solid var(--gris);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+thead{
+    text-align: left;
+    background: var(--gris);
+}
+
+
+tbody tr:nth-child(even) {
+    background: var(--gris);
+}
+
+td, th{
+    padding: 8px 4px;
+}

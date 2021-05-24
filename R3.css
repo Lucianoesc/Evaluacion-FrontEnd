@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carta {   
+    width: 100%;
+    padding: 10px;
+}
+
+.carta h2{
+    font-family: 'Arial';
+    font-weight: bolder;
+    margin: 20px 0;
+    font-size: 1.9rem;
+}
+
+.cuerpo p{
+    font-family: 'Arial';
+    font-weight: lighter;
+    font-size: 0.8em;
+    line-height: 25px;
+}
+
+.carta video{
+    width: 100%;
+}
+
+.video {
+    position: relative;
+}
+
+.play-button{
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* MODAL */
+
+.modal-background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal{
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 3px;
+    animation: animate1 0.5s linear 1;
+}
+
+
+.modal video{
+    width: 100%;
+}
+
+@media(min-width: 992px){
+    .carta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .carta h2{
+        font-size: 3rem;
+    }
+
+    .video{
+        width: 100%;
+    }
+
+    .cuerpo {
+        width: 60%;
+        padding: 0 50px;
+    }
+
+    .modal {
+        width: 70%;
+    }
+
+}
+
+
+
+@keyframes animate2 {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animate1 {
+    0%{
+        opacity: 0;
+        transform: translateX(-15%);
+        transform: rotateY(120deg);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        transform: rotateY(0);
+    }
+}
