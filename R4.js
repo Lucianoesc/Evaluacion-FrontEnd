@@ -8,7 +8,7 @@ const api = async (url) => {
 
 }
 
-
+// Renderizar/Mostrar la informacion obtenida del API en el html //
 const render = async ( data ) => {
 
     const info = await data;
